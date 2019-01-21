@@ -169,5 +169,5 @@ function kitchen(){
 	btn2.style.display = "inline";
 	btn3.style.display = "inline";
 	btn1.innerHTML = "bedroom"
-	btn2.innerHTML = "garage"
+	btn2.innerHTML = "garagee"
 }
