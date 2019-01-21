@@ -1,0 +1,64 @@
+body{
+	font-family: "Arial Black", Gadget, sans-serif;
+	background-image: url('pic/late.jpg');
+	background-size: cover;
+	background-repeat: none;
+	font-size: 20px;
+}
+
+#game-container{
+	margin: 0 auto;
+	width: 1100px;
+	height: 600px;
+	text-align: center;
+}
+
+#time{
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 50px;
+}
+
+#button1:hover{
+	background-color: rgb(127, 255, 212);
+}
+#button2:hover{
+	background-color: rgb(127, 255, 212);
+}
+#button3:hover{
+	background-color: rgb(127, 255, 212);
+}
+
+#button1{
+	margin-right: 100px;
+	border-radius: 10%;
+	height: 70px;
+	width: 70px;
+	background-color: #5F9EA0;
+	font-size: 13px;
+}
+#button2{
+	margin-right: 100px;
+	border-radius: 10%;
+	height: 70px;
+	width: 70px;
+	background-color: #5F9EA0;
+	font-size: 13px;
+}
+#button3{
+	margin-right: 100px;
+	border-radius: 10%;
+	height: 70px;
+	width: 70px;
+	background-color: #5F9EA0;
+	font-size: 13px;
+}
+
+#game-buttons{
+	position: absolute;
+	top: 600px;
+	width: 600px;
+	margin: 0 auto;
+	margin-left: 300px;
+}
