@@ -17,6 +17,7 @@ inventory1.style.display = "none";
 inventory2.style.display = "none";
 description.innerHTML = "You are currently sleeping, you have to be at work at 8 o'clock.";
 
+
 button1.onclick= function(){
 	document.body.style.backgroundImage = "url('pic/bedroom2.jpg')";
 	time.innerHTML = "06:55";
@@ -190,6 +191,9 @@ function dress3(){
 	btn3.onclick  = function(){
 		dress4();
 	}
+	btn1.onclick = function(){
+		bedroom8();
+	}
 }
 
 function dress4(){
@@ -352,6 +356,18 @@ function bedroom7(){
 	}
 }
 
+function bedroom8(){
+	document.body.style.backgroundImage = "url('pic/bedroom1.jpg')";
+	btn1.innerHTML = "shower";
+	btn2.innerHTML = "kitchen";
+	title.innerHTML = "bedroom8";
+
+
+	btn1.onclick = function(){
+		dress3();
+	}
+}
+
 function kitchen(){
 	document.body.style.backgroundImage = "url('pic/kitchen2.jpg')";
 	btn2.innerHTML = "garage";
@@ -373,6 +389,9 @@ function kitchen(){
 	inventory2.onclick = function(){
 		kitchen4();
 	}
+	btn2.onclick = function(){
+		garage();
+	}
 }
 
 function kitchen1(){
@@ -389,6 +408,9 @@ function kitchen1(){
 
 	btn1.onclick = function(){
 		bedroom2();
+	}
+	btn3.onclick = function(){
+		garage1();
 	}
 }
 
@@ -414,12 +436,15 @@ function kitchen2(){
 
 function kitchen3(){
 	document.body.style.backgroundImage = "url('pic/kitchen1.jpg')";
+	btn1.innerHTML = "shower";
+	btn2.innerHTML = "garage";
 	title.innerHTML = "kitchen3";
+	inventory1.style.top = "870px";
+	inventory1.style.left = "1120px";
+	inventory1.style.height = "120px";
 	inventory1.style.display = "inline";
-	inventory1.style.height = "120px"
-	inventory1.style.position = "absolute"
-	inventory1.style.top = "870px"
-	inventory1.style.left = "1120px"
+	inventory1.style.position = "absolute";
+
 
 	btn1.onclick = function(){
 		bedroom3();
@@ -431,38 +456,157 @@ function kitchen3(){
 
 function kitchen4(){
 	document.body.style.backgroundImage = "url('pic/kitchen1.jpg')";
+	btn2.innerHTML = "garage";
+	btn1.innerHTML = "bedroom";
 	title.innerHTML = "kitchen4";
 	inventory2.style.display = "none";
-	title.innerHTML = "kitchen4";
 
 
 	btn1.onclick = function(){
 		bedroom4();
 	}
+	btn2.onclick = function(){
+		garage2();
+	}
 }
 
 function kitchen5(){
 	document.body.style.backgroundImage = "url('pic/kitchen.jpg')";
+	btn2.innerHTML = "garage";
+	btn1.innerHTML = "bedroom";
 	title.innerHTML = "kitchen5";
 	inventory1.style.display = "none";
-	btn1.innerHTML = "bedroom";
-	btn2.innerHTML = "garage"
 
 
 	btn1.onclick = function(){
 		bedroom7();
 	}
+	btn2.onclick = function(){
+		garage3();
+	}
 }
 
 function kitchen6(){
 	document.body.style.backgroundImage = "url('pic/kitchen.jpg')";
-	inventory1.style.display = "none";
-	title.innerHTML = "kitchen6"
+	btn2.innerHTML = "garage";
 	btn1.innerHTML = "bedroom";
-	btn2.innerHTML = "garage"
+	title.innerHTML = "kitchen6";
+	inventory1.style.display = "none";
 
 
 	btn1.onclick = function(){
 		bedroom6();
 	}
+	btn2.onclick = function(){
+		garage4();
+	}
+}
+
+function garage(){
+	document.body.style.backgroundImage = "url('pic/garage2.jpg')";
+	title.innerHTML = "garage";
+	btn1.innerHTML = "kitchen";
+	btn2.innerHTML = "go outside!";
+	inventory.style.display = "none";
+	inventory1.style.display = "none";
+	inventory2.style.display = "none";
+
+
+	btn1.onclick = function(){
+		kitchen();
+	}
+	btn2.onclick = function(){
+		outside();
+	}
+}
+
+function garage1(){
+	document.body.style.backgroundImage = "url('pic/garage2.jpg')";
+	btn1.innerHTML = "kitchen";
+	title.innerHTML = "garage1";
+	btn2.style.display = "none";
+	btn3.innerHTML = "go outside!";
+	inventory.style.display = "none";
+	inventory1.style.display = "none";
+	inventory2.style.display = "none";
+}
+
+function garage2(){
+	document.body.style.backgroundImage = "url('pic/garage1.jpg')";
+	btn1.innerHTML = "kitchen";
+	title.innerHTML = "garage2";
+	btn3.style.display = "none";
+	btn2.innerHTML = "go outside!";
+	inventory.style.display = "none";
+	inventory1.style.display = "none";
+	inventory2.style.display = "none";
+
+
+	btn1.onclick = function(){
+		kitchen4();
+	}
+	btn2.onclick = function(){
+		outside1();
+	}
+}
+
+function garage3(){
+	document.body.style.backgroundImage = "url('pic/garage.jpg')";
+	btn1.innerHTML = "kitchen";
+	title.innerHTML = "garage3";
+	btn3.style.display = "none";
+	btn2.innerHTML = "go outside!";
+	inventory.style.display = "none";
+	inventory1.style.display = "none";
+	inventory2.style.display = "none";
+
+
+	btn1.onclick = function(){
+		kitchen5();
+	}
+	btn2.onclick = function(){
+		outside2();
+	}
+}
+
+function garage4(){
+	document.body.style.backgroundImage = "url('pic/garage.jpg')";
+	btn1.innerHTML = "kitchen";
+	title.innerHTML = "garage3";
+	btn3.style.display = "none";
+	btn2.innerHTML = "go outside!";
+	inventory.style.display = "none";
+	inventory1.style.display = "none";
+	inventory2.style.display = "none";
+
+
+	btn1.onclick = function(){
+		kitchen6();
+	}
+}
+
+function garage5(){
+	document.body.style.backgroundImage = "url('pic/garage1.jpg')";
+	btn1.innerHTML = "kitchen";
+	title.innerHTML = "garage2";
+	btn3.style.display = "none";
+	btn2.innerHTML = "go outside!";
+	inventory.style.display = "none";
+	inventory1.style.display = "none";
+	inventory2.style.display = "none";
+}
+
+function outside(){
+	document.body.style.backgroundImage = "url('pic/garage2.jpg')";
+	alert("You can not go outside without your clothes!");
+}
+
+function outside1(){
+	document.body.style.backgroundImage = "url('pic/garage1.jpg')";
+	alert("You can not go outside without your clothes!");
+}
+
+function outside2(){
+	document.body.style.backgroundImage = "url('pic/garage.jpg')";
+	alert("You can not go outside without your clothes!");
 }
