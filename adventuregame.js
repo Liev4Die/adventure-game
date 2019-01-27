@@ -178,8 +178,11 @@ function dress2(){
 
 function dress3(){
 	document.body.style.backgroundImage = "url('pic/shower1.jpg')";
+	btn3.innerHTML = "shower";
 	btn2.innerHTML = "undress";
+	btn1.innerHTML = "bedroom";
 	title.innerHTML = "dress3";
+	btn2.style.display = "inline";
 	inventory.style.display = "none";
 	inventory1.style.display = "none";
 	inventory2.style.display = "none";
@@ -251,7 +254,7 @@ function bedroom1(){
 
 
 	btn1.onclick = function(){
-		shower1	();
+		shower1();
 	}
 	btn2.onclick = function(){
 		kitchen2();
@@ -359,12 +362,18 @@ function bedroom7(){
 function bedroom8(){
 	document.body.style.backgroundImage = "url('pic/bedroom1.jpg')";
 	btn1.innerHTML = "shower";
-	btn2.innerHTML = "kitchen";
+	btn3.innerHTML = "kitchen";
+	btn2.style.display = "none";
 	title.innerHTML = "bedroom8";
+	inventory2.style.display = "none";
+
 
 
 	btn1.onclick = function(){
 		dress3();
+	}
+	btn3.onclick = function(){
+		kitchen7()
 	}
 }
 
@@ -412,6 +421,9 @@ function kitchen1(){
 	btn3.onclick = function(){
 		garage1();
 	}
+	inventory2.onclick = function(){
+		kitchen7()
+	}
 }
 
 function kitchen2(){
@@ -431,6 +443,9 @@ function kitchen2(){
 	}
 	inventory1.onclick = function(){
 		kitchen5();
+	}
+	btn2.onclick = function(){
+		garage2()
 	}
 }
 
@@ -499,6 +514,22 @@ function kitchen6(){
 	}
 	btn2.onclick = function(){
 		garage4();
+	}
+}
+
+function kitchen7(){
+	document.body.style.backgroundImage = "url('pic/kitchen1.jpg')";
+	btn2.innerHTML = "garage";
+	btn1.innerHTML = "bedroom";
+	title.innerHTML = "kitchen7";
+	inventory2.style.display = "none";
+
+
+	btn1.onclick = function(){
+		bedroom8();
+	}
+	btn2.onclick = function(){
+
 	}
 }
 
@@ -572,7 +603,7 @@ function garage3(){
 function garage4(){
 	document.body.style.backgroundImage = "url('pic/garage.jpg')";
 	btn1.innerHTML = "kitchen";
-	title.innerHTML = "garage3";
+	title.innerHTML = "garage4";
 	btn3.style.display = "none";
 	btn2.innerHTML = "go outside!";
 	inventory.style.display = "none";
@@ -588,12 +619,20 @@ function garage4(){
 function garage5(){
 	document.body.style.backgroundImage = "url('pic/garage1.jpg')";
 	btn1.innerHTML = "kitchen";
-	title.innerHTML = "garage2";
+	title.innerHTML = "garage5";
 	btn3.style.display = "none";
 	btn2.innerHTML = "go outside!";
 	inventory.style.display = "none";
 	inventory1.style.display = "none";
 	inventory2.style.display = "none";
+}
+
+function garage6(){
+	document.body.style.backgroundImage = "url('pic/garage1.jpg')";
+	btn1.innerHTML = "kitchen";
+	title.innerHTML = "garage6";
+	btn3
+
 }
 
 function outside(){
