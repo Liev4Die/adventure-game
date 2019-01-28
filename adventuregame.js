@@ -445,7 +445,7 @@ function kitchen2(){
 		kitchen5();
 	}
 	btn2.onclick = function(){
-		garage2()
+		garage1()
 	}
 }
 
@@ -466,6 +466,9 @@ function kitchen3(){
 	}
 	inventory1.onclick = function(){
 		kitchen6();
+	}
+	btn2.onclick = function(){
+		garage5()
 	}
 }
 
@@ -555,11 +558,19 @@ function garage1(){
 	document.body.style.backgroundImage = "url('pic/garage2.jpg')";
 	btn1.innerHTML = "kitchen";
 	title.innerHTML = "garage1";
-	btn2.style.display = "none";
-	btn3.innerHTML = "go outside!";
+	btn3.style.display = "none";
+	btn2.innerHTML = "go outside!";
 	inventory.style.display = "none";
 	inventory1.style.display = "none";
 	inventory2.style.display = "none";
+
+
+	btn1.onclick = function(){
+		kitchen2()
+	}
+	btn2.onclick = function(){
+
+	}
 }
 
 function garage2(){
@@ -625,6 +636,12 @@ function garage5(){
 	inventory.style.display = "none";
 	inventory1.style.display = "none";
 	inventory2.style.display = "none";
+
+
+	btn1.onclick = function(){
+		kitchen3()
+	}
+	
 }
 
 function garage6(){
