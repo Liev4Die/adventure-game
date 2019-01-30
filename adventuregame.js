@@ -23,11 +23,12 @@ button1.onclick= function(){
 	time.innerHTML = "06:55";
 	btn1.innerHTML = "shower";
 	btn2.innerHTML = "kitchen";
-	title.innerHTML = "start!";
+	title.innerHTML = "good morning!";
 	btn2.style.display = "inline";
 	inventory.style.display = "none";
 	inventory1.style.display = "none";
 	inventory2.style.display = "none";
+	description.innerHTML = "You need to take a shower and eat breakfast before work!"
 
 
 	btn1.onclick = function(){
@@ -48,6 +49,7 @@ function shower(){
 	inventory.style.display = "none";
 	inventory1.style.display = "none";
 	inventory2.style.display = "none";
+	description.innerHTML = "You can take a shower here and put your clothes on!"
 
 
 	btn1.onclick = function(){
@@ -63,14 +65,16 @@ function shower(){
 
 function shower1(){
 	document.body.style.backgroundImage = "url('pic/shower1.jpg')";
+	time.innerHTML = "07:00";
 	btn2.innerHTML = "dress";
 	btn1.innerHTML = "bedroom";
 	btn3.style.display = "none";
-	title.innerHTML = "shower1!";
+	title.innerHTML = "shower!";
 	btn2.style.display = "inline";
 	inventory.style.display = "none";
 	inventory1.style.display = "none";
 	inventory2.style.display = "none";
+	description.innerHTML = "Nice! now that you have showered, you have better vision!"
 
 
 	btn1.onclick = function(){
@@ -83,6 +87,7 @@ function shower1(){
 
 function shower2(){
 	document.body.style.backgroundImage = "url('pic/shower1.jpg')";
+	time.innerHTML = "07:00";
 	btn2.innerHTML = "dress";
 	btn3.innerHTML ="shower";
 	btn1.innerHTML = "bedroom";
@@ -93,6 +98,7 @@ function shower2(){
 	inventory.style.display = "none";
 	inventory1.style.display = "none";
 	inventory2.style.display = "none";
+	description.innerHTML = "You can take a shower here and put your clothes on!"
 
 	
 	btn3.onclick = function(){
@@ -108,10 +114,12 @@ function shower2(){
 
 function shower3(){
 	document.body.style.backgroundImage = "url('pic/shower.jpg')";
+	time.innerHTML = "07:05";
 	btn2.innerHTML = "dress";
 	btn1.innerHTML = "bedroom";
 	title.innerHTML = "shower3";
 	btn3.style.display = "none";
+	description.innerHTML = "Nice! now that you have showered, you have better vision!"
 
 
 	btn2.onclick = function(){
@@ -127,13 +135,14 @@ function dress(){
 	btn3.innerHTML = "shower";
 	btn2.innerHTML = "undress";
 	btn1.innerHTML = "bedroom";
-	title.innerHTML = "dress!";
+	title.innerHTML = "shower!";
 	btn1.style.display = "inline";
 	btn2.style.display = "inline";
 	btn3.style.display = "inline";
 	inventory.style.display = "none";
 	inventory1.style.display = "none";
 	inventory2.style.display = "none";
+	description.innerHTML = "You have put your clothes on!"
 
 
 	btn1.onclick = function(){
@@ -158,14 +167,17 @@ function dress1(){
 
 function dress2(){
 	document.body.style.backgroundImage = "url('pic/shower1.jpg')";
+	time.innerHTML = "07:00";
 	btn1.innerHTML = "bedroom";
-	title.innerHTML = "dress2";
+	title.innerHTML = "shower!";
 	btn2.innerHTML = "undress";
 	btn3.style.display = "none";
 	btn2.style.display = "inline";
 	inventory.style.display = "none";
 	inventory1.style.display = "none";
 	inventory2.style.display = "none";
+	description.innerHTML = "You have put your clothes on!"
+
 
 
 	btn1.onclick = function(){
@@ -178,6 +190,7 @@ function dress2(){
 
 function dress3(){
 	document.body.style.backgroundImage = "url('pic/shower1.jpg')";
+	time.innerHTML = "07:00";
 	btn3.innerHTML = "shower";
 	btn2.innerHTML = "undress";
 	btn1.innerHTML = "bedroom";
@@ -186,6 +199,7 @@ function dress3(){
 	inventory.style.display = "none";
 	inventory1.style.display = "none";
 	inventory2.style.display = "none";
+	description.innerHTML = "You have put your clothes on!"
 
 
 	btn2.onclick = function(){
@@ -206,9 +220,11 @@ function dress4(){
 
 function dress5(){
 	document.body.style.backgroundImage = "url('pic/shower.jpg')";
+	time.innerHTML = "07:05";
 	btn2.innerHTML = "undress";
 	title.innerHTML = "dress5";
 	btn1.innerHTML = "bedroom";
+	description.innerHTML = "You have put your clothes on!";
 
 
 	btn2.onclick = function(){
@@ -230,6 +246,7 @@ function bedroom(){
 	inventory.style.display = "none";
 	inventory1.style.display = "none";
 	inventory2.style.display = "none";
+	description.innerHTML = "You can go to the kitchen from here."
 
 
 	btn1.onclick = function(){
@@ -242,15 +259,16 @@ function bedroom(){
 
 function bedroom1(){
 	document.body.style.backgroundImage = "url('pic/bedroom1.jpg')";
-	time.innerHTML = "06:55";
+	time.innerHTML = "07:00";
 	btn1.innerHTML = "shower";
 	btn2.innerHTML = "kitchen";
 	btn3.style.display = "none";
-	title.innerHTML = "bedroom1";
+	title.innerHTML = "bedroom!";
 	btn2.style.display = "inline";
 	inventory.style.display = "none";
 	inventory1.style.display = "none";
 	inventory2.style.display = "none";
+	description.innerHTML = "You can go to the kitchen from here."
 
 
 	btn1.onclick = function(){
@@ -271,6 +289,7 @@ function bedroom2(){
 	inventory.style.display = "none";
 	inventory1.style.display = "none";
 	inventory2.style.display = "none";
+	description.innerHTML = "You can go to the kitchen from here."
 
 
 	btn1.onclick = function(){
@@ -283,11 +302,13 @@ function bedroom2(){
 
 function bedroom3(){
 	document.body.style.backgroundImage = "url('pic/bedroom1.jpg')";
+	time.innerHTML = "07:00";
 	btn1.innerHTML = "shower";
 	btn2.innerHTML = "kitchen";
 	btn3.style.display = "none";
 	title.innerHTML = "bedroom3";
 	btn2.style.display = "inline";
+	description.innerHTML = "You can go to the kitchen from here."
 
 
 	btn1.onclick = function(){
@@ -300,10 +321,12 @@ function bedroom3(){
 
 function bedroom4(){
 	document.body.style.backgroundImage = "url('pic/bedroom1.jpg')";
+	time.innerHTML = "07:00";	
 	btn1.innerHTML = "shower";
 	btn2.innerHTML = "kitchen";
 	btn3.style.display = "none";
 	title.innerHTML = "bedroom4";
+	description.innerHTML = "You can go to the kitchen from here."
 
 
 	btn1.onclick = function(){
@@ -316,9 +339,11 @@ function bedroom4(){
 
 function bedroom5(){
 	document.body.style.backgroundImage = "url('pic/bedroom.jpg')";
+	time.innerHTML = "07:05";
 	btn1.innerHTML = "shower";
 	btn2.innerHTML = "kitchen";
 	title.innerHTML = "bedroom5";
+	description.innerHTML = "You can go to the kitchen from here."
 
 
 	btn1.onclick = function(){
@@ -331,9 +356,11 @@ function bedroom5(){
 
 function bedroom6(){
 	document.body.style.backgroundImage = "url('pic/bedroom.jpg')";
+	time.innerHTML = "07:05";
 	btn1.innerHTML = "shower";
 	btn2.innerHTML = "kitchen";
 	title.innerHTML = "bedroom6";
+	description.innerHTML = "You can go to the kitchen from here."
 
 
 	btn1.onclick = function(){
@@ -346,9 +373,11 @@ function bedroom6(){
 
 function bedroom7(){
 	document.body.style.backgroundImage = "url('pic/bedroom.jpg')";
+	time.innerHTML = "07:05";
 	btn1.innerHTML = "shower";
 	btn2.innerHTML = "kitchen";
 	title.innerHTML = "bedroom7";
+	description.innerHTML = "You can go to the kitchen from here."
 
 
 	btn2.onclick = function(){
@@ -361,11 +390,13 @@ function bedroom7(){
 
 function bedroom8(){
 	document.body.style.backgroundImage = "url('pic/bedroom1.jpg')";
+	time.innerHTML = "07:00";
 	btn1.innerHTML = "shower";
 	btn3.innerHTML = "kitchen";
 	btn2.style.display = "none";
 	title.innerHTML = "bedroom8";
 	inventory2.style.display = "none";
+	description.innerHTML = "You can go to the kitchen from here."
 
 
 
@@ -379,6 +410,7 @@ function bedroom8(){
 
 function kitchen(){
 	document.body.style.backgroundImage = "url('pic/kitchen2.jpg')";
+	time.innerHTML = "06:55";
 	btn2.innerHTML = "garage";
 	btn1.innerHTML = "bedroom";
 	title.innerHTML = "kitchen";
@@ -390,6 +422,7 @@ function kitchen(){
 	inventory2.style.height = "120px";
 	inventory2.style.display = "inline";
 	inventory2.style.position = "absolute";
+	description.innerHTML = "You can eat breakfast here!";
 
 
 	btn1.onclick = function(){
@@ -405,6 +438,7 @@ function kitchen(){
 
 function kitchen1(){
 	document.body.style.backgroundImage = "url('pic/kitchen2.jpg')";
+	time.innerHTML = "06:55";
 	btn3.innerHTML = "garage";
 	btn1.innerHTML = "bedroom";
 	title.innerHTML = "kitchen1";
@@ -413,6 +447,7 @@ function kitchen1(){
 	inventory2.style.height = "120px";
 	inventory2.style.display = "inline";
 	inventory2.style.position = "absolute";
+	description.innerHTML = "You can eat breakfast here!";
 	
 
 	btn1.onclick = function(){
@@ -428,6 +463,7 @@ function kitchen1(){
 
 function kitchen2(){
 	document.body.style.backgroundImage = "url('pic/kitchen1.jpg')";
+	time.innerHTML = "07:00";
 	btn2.innerHTML = "garage";
 	btn1.innerHTML = "bedroom";
 	title.innerHTML = "kitchen2";
@@ -436,6 +472,7 @@ function kitchen2(){
 	inventory1.style.height = "120px";
 	inventory1.style.display = "inline";
 	inventory1.style.position = "absolute";
+	description.innerHTML = "You can eat breakfast here!";
 
 
 	btn1.onclick = function(){
@@ -451,6 +488,7 @@ function kitchen2(){
 
 function kitchen3(){
 	document.body.style.backgroundImage = "url('pic/kitchen1.jpg')";
+	time.innerHTML = "07:00";
 	btn1.innerHTML = "shower";
 	btn2.innerHTML = "garage";
 	title.innerHTML = "kitchen3";
@@ -459,6 +497,7 @@ function kitchen3(){
 	inventory1.style.height = "120px";
 	inventory1.style.display = "inline";
 	inventory1.style.position = "absolute";
+	description.innerHTML = "You can eat breakfast here!";
 
 
 	btn1.onclick = function(){
@@ -474,10 +513,12 @@ function kitchen3(){
 
 function kitchen4(){
 	document.body.style.backgroundImage = "url('pic/kitchen1.jpg')";
+	time.innerHTML = "07:00";
 	btn2.innerHTML = "garage";
 	btn1.innerHTML = "bedroom";
 	title.innerHTML = "kitchen4";
 	inventory2.style.display = "none";
+	description.innerHTML = "Nice! your stomach is full!"
 
 
 	btn1.onclick = function(){
@@ -490,10 +531,12 @@ function kitchen4(){
 
 function kitchen5(){
 	document.body.style.backgroundImage = "url('pic/kitchen.jpg')";
+	time.innerHTML = "07:05";
 	btn2.innerHTML = "garage";
 	btn1.innerHTML = "bedroom";
 	title.innerHTML = "kitchen5";
 	inventory1.style.display = "none";
+	description.innerHTML = "Nice! your stomach is full!"
 
 
 	btn1.onclick = function(){
@@ -506,10 +549,12 @@ function kitchen5(){
 
 function kitchen6(){
 	document.body.style.backgroundImage = "url('pic/kitchen.jpg')";
+	time.innerHTML = "07:05";
 	btn2.innerHTML = "garage";
 	btn1.innerHTML = "bedroom";
 	title.innerHTML = "kitchen6";
 	inventory1.style.display = "none";
+	description.innerHTML = "Nice! your stomach is full!"
 
 
 	btn1.onclick = function(){
@@ -522,11 +567,13 @@ function kitchen6(){
 
 function kitchen7(){
 	document.body.style.backgroundImage = "url('pic/kitchen1.jpg')";
+	time.innerHTML = "07:00";
 	btn3.innerHTML = "garage";
 	btn1.innerHTML = "bedroom";
 	btn2.style.display = "none";
 	title.innerHTML = "kitchen7";
 	inventory2.style.display = "none";
+	description.innerHTML = "Nice! your stomach is full!"
 
 
 	btn1.onclick = function(){
@@ -539,6 +586,7 @@ function kitchen7(){
 
 function garage(){
 	document.body.style.backgroundImage = "url('pic/garage2.jpg')";
+	time.innerHTML = "06:55";
 	title.innerHTML = "garage";
 	btn1.innerHTML = "kitchen";
 	btn2.innerHTML = "go outside!";
@@ -557,6 +605,7 @@ function garage(){
 
 function garage1(){
 	document.body.style.backgroundImage = "url('pic/garage2.jpg')";
+	time.innerHTML = "06:55";
 	btn1.innerHTML = "kitchen";
 	title.innerHTML = "garage1";
 	btn2.style.display = "none";
@@ -577,6 +626,7 @@ function garage1(){
 
 function garage2(){
 	document.body.style.backgroundImage = "url('pic/garage1.jpg')";
+	time.innerHTML = "07:00";
 	btn1.innerHTML = "kitchen";
 	title.innerHTML = "garage2";
 	btn3.style.display = "none";
@@ -596,6 +646,7 @@ function garage2(){
 
 function garage3(){
 	document.body.style.backgroundImage = "url('pic/garage.jpg')";
+	time.innerHTML = "07:05";
 	btn1.innerHTML = "kitchen";
 	title.innerHTML = "garage3";
 	btn3.style.display = "none";
@@ -615,6 +666,7 @@ function garage3(){
 
 function garage4(){
 	document.body.style.backgroundImage = "url('pic/garage.jpg')";
+	time.innerHTML = "07:05";
 	btn1.innerHTML = "kitchen";
 	title.innerHTML = "garage4";
 	btn3.style.display = "none";
@@ -625,12 +677,16 @@ function garage4(){
 
 
 	btn1.onclick = function(){
-		kitchen6();
+		kitchen6()
+	}
+	btn2.onclick = function(){
+		highway()
 	}
 }
 
 function garage5(){
 	document.body.style.backgroundImage = "url('pic/garage1.jpg')";
+	time.innerHTML = "07:00";
 	btn1.innerHTML = "kitchen";
 	title.innerHTML = "garage5";
 	btn3.style.display = "none";
@@ -650,6 +706,7 @@ function garage5(){
 
 function garage6(){
 	document.body.style.backgroundImage = "url('pic/garage1.jpg')";
+	time.innerHTML = "07:00";
 	btn1.innerHTML = "kitchen";
 	btn2.innerHTML = "outside";
 	title.innerHTML = "garage6";
@@ -666,6 +723,7 @@ function garage6(){
 
 function garage7(){
 	document.body.style.backgroundImage = "url('pic/garage1.jpg')";
+	time.innerHTML = "07:00";
 	btn1.innerHTML = "kitchen";
 	btn3.innerHTML = "outside";
 
@@ -695,12 +753,157 @@ function outside2(){
 
 function highway2(){
 	document.body.style.backgroundImage = "url('pic/highway2.jpg')";
+	btn1.innerHTML = "go left!";
+	btn3.style.display = "none";
+	btn2.innerHTML = "go right!";
+	btn2.style.display = "inline";
+	
+
+	btn1.onclick = function(){
+		crash()
+	}
+	btn2.onclick = function(){
+		crash()
+	}
 }
 
 function highway1(){
 	document.body.style.backgroundImage = "url('pic/highway1.jpg')";
+	btn1.innerHTML = "go left!";
+	btn3.style.display = "none";
+	btn2.innerHTML = "go right!";
+	btn2.style.display = "inline";
+
+
+	btn1.onclick = function(){
+		crash()
+	}
+	btn2.onclick = function(){
+		crash()
+	}
 }
 
 function highway(){
 	document.body.style.backgroundImage = "url('pic/highway.jpg')";
+	btn1.innerHTML = "go left!";
+	btn3.style.display = "none";
+	btn2.innerHTML = "go right!";
+	btn2.style.display = "inline";
+
+
+	btn1.onclick = function(){
+		office()
+	}
+	btn2.onclick = function(){
+		late()
+	}
+}
+
+function crash(){
+	document.body.style.backgroundImage = "url('pic/crash.jpg')";
+	btn1.innerHTML = "start again";
+	btn2.style.display = "none";
+	btn3.style.display = "none";
+
+
+	btn1.onclick = function(){
+		restart()
+	}
+}
+
+function late(){
+	document.body.style.backgroundImage = "url('pic/wrong.jpg')";
+	btn1.innerHTML = "go back!";
+	btn2.style.display = "none";
+	btn3.style.display = "none";
+
+
+	btn1.onclick = function(){
+		late2()
+	}
+}
+
+function late2(){
+	document.body.style.backgroundImage = "url('pic/highway.jpg')";
+	btn1.innerHTML = "go left!";
+	btn3.style.display = "none";
+	btn2.innerHTML = "go right!";
+	btn2.style.display = "none";
+
+
+	btn1.onclick = function(){
+		lose()
+	}
+}
+
+function office(){
+	document.body.style.backgroundImage = "url('pic/office.jpg')";
+	btn1.innerHTML = "go left!";
+	btn3.style.display = "none";
+	btn2.innerHTML = "go right!";
+	btn2.style.display = "inline";
+
+
+	btn1.onclick = function(){
+		win()
+	}
+	btn2.onclick = function(){
+		wrong1()
+	}
+}
+
+function lose(){
+	document.body.style.backgroundImage = "url('pic/lose.jpg')";
+	btn1.innerHTML = "start again!";
+	btn3.style.display = "none";
+	btn2.innerHTML = "go right!";
+	btn2.style.display = "none";
+
+
+	btn1.onclick = function(){
+		restart()
+	}
+}
+
+function wrong1(){
+	document.body.style.backgroundImage = "url('pic/wrong.jpg')";
+	btn1.innerHTML = "go back!";
+	btn3.style.display = "none";
+	btn2.innerHTML = "go right!";
+	btn2.style.display = "none";
+
+
+	btn1.onclick = function(){
+		lose()
+	}
+}
+
+function late3(){
+	document.body.style.backgroundImage = "url('pic/office.jpg')";
+	btn1.innerHTML = "go left!";
+	btn3.style.display = "none";
+	btn2.innerHTML = "go right!";
+	btn2.style.display = "none";
+
+
+	btn1.onclick = function(){
+		lose()
+	}
+}
+
+function win(){
+	document.body.style.backgroundImage = "url('pic/win.jpg')";
+	btn1.innerHTML = "start again!";
+	btn3.style.display = "none";
+	btn2.innerHTML = "go right!";
+	btn2.style.display = "none";
+
+
+	btn1.onclick = function(){
+		restart()
+	}
+}
+
+function restart(){
+	window.location.reload();
 }
