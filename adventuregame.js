@@ -445,7 +445,7 @@ function kitchen2(){
 		kitchen5();
 	}
 	btn2.onclick = function(){
-		garage1()
+		garage6()
 	}
 }
 
@@ -522,8 +522,9 @@ function kitchen6(){
 
 function kitchen7(){
 	document.body.style.backgroundImage = "url('pic/kitchen1.jpg')";
-	btn2.innerHTML = "garage";
+	btn3.innerHTML = "garage";
 	btn1.innerHTML = "bedroom";
+	btn2.style.display = "none";
 	title.innerHTML = "kitchen7";
 	inventory2.style.display = "none";
 
@@ -531,8 +532,8 @@ function kitchen7(){
 	btn1.onclick = function(){
 		bedroom8();
 	}
-	btn2.onclick = function(){
-
+	btn3.onclick = function(){
+		garage7()
 	}
 }
 
@@ -558,18 +559,19 @@ function garage1(){
 	document.body.style.backgroundImage = "url('pic/garage2.jpg')";
 	btn1.innerHTML = "kitchen";
 	title.innerHTML = "garage1";
-	btn3.style.display = "none";
-	btn2.innerHTML = "go outside!";
+	btn2.style.display = "none";
+	btn3.style.display = "inline";
+	btn3.innerHTML = "go outside!";
 	inventory.style.display = "none";
 	inventory1.style.display = "none";
 	inventory2.style.display = "none";
 
 
 	btn1.onclick = function(){
-		kitchen2()
+		kitchen1()
 	}
-	btn2.onclick = function(){
-
+	btn3.onclick = function(){
+		highway2()
 	}
 }
 
@@ -641,15 +643,39 @@ function garage5(){
 	btn1.onclick = function(){
 		kitchen3()
 	}
-	
+	btn2.onclick = function(){
+		highway1()	
+	}
 }
 
 function garage6(){
 	document.body.style.backgroundImage = "url('pic/garage1.jpg')";
 	btn1.innerHTML = "kitchen";
+	btn2.innerHTML = "outside";
 	title.innerHTML = "garage6";
-	btn3
+	inventory1.style.display = "none";
+	
 
+	btn1.onclick = function(){
+		kitchen2()
+	}
+	btn2.onclick = function(){
+		outside1()
+	}
+}
+
+function garage7(){
+	document.body.style.backgroundImage = "url('pic/garage1.jpg')";
+	btn1.innerHTML = "kitchen";
+	btn3.innerHTML = "outside";
+
+
+	btn1.onclick = function(){
+		kitchen7()
+	}
+	btn3.onclick = function(){
+		highway1()
+	}
 }
 
 function outside(){
@@ -665,4 +691,16 @@ function outside1(){
 function outside2(){
 	document.body.style.backgroundImage = "url('pic/garage.jpg')";
 	alert("You can not go outside without your clothes!");
+}
+
+function highway2(){
+	document.body.style.backgroundImage = "url('pic/highway2.jpg')";
+}
+
+function highway1(){
+	document.body.style.backgroundImage = "url('pic/highway1.jpg')";
+}
+
+function highway(){
+	document.body.style.backgroundImage = "url('pic/highway.jpg')";
 }
