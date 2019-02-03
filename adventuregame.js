@@ -592,6 +592,7 @@ function garage(){
 	btn2.innerHTML = "go outside!";
 	inventory.style.display = "none";
 	inventory1.style.display = "none";
+	description.innerHTML = "Here you can take the car and go outside!";
 	inventory2.style.display = "none";
 
 
@@ -614,6 +615,7 @@ function garage1(){
 	inventory.style.display = "none";
 	inventory1.style.display = "none";
 	inventory2.style.display = "none";
+	description.innerHTML = "Here you can take the car and go outside!";
 
 
 	btn1.onclick = function(){
@@ -634,6 +636,7 @@ function garage2(){
 	inventory.style.display = "none";
 	inventory1.style.display = "none";
 	inventory2.style.display = "none";
+	description.innerHTML = "Here you can take the car and go outside!";
 
 
 	btn1.onclick = function(){
@@ -654,6 +657,7 @@ function garage3(){
 	inventory.style.display = "none";
 	inventory1.style.display = "none";
 	inventory2.style.display = "none";
+	description.innerHTML = "Here you can take the car and go outside!";
 
 
 	btn1.onclick = function(){
@@ -674,6 +678,7 @@ function garage4(){
 	inventory.style.display = "none";
 	inventory1.style.display = "none";
 	inventory2.style.display = "none";
+	description.innerHTML = "Here you can take the car and go outside!";
 
 
 	btn1.onclick = function(){
@@ -694,6 +699,7 @@ function garage5(){
 	inventory.style.display = "none";
 	inventory1.style.display = "none";
 	inventory2.style.display = "none";
+	description.innerHTML = "Here you can take the car and go outside!";
 
 
 	btn1.onclick = function(){
@@ -711,6 +717,7 @@ function garage6(){
 	btn2.innerHTML = "outside";
 	title.innerHTML = "garage6";
 	inventory1.style.display = "none";
+	description.innerHTML = "Here you can take the car and go outside!";
 	
 
 	btn1.onclick = function(){
@@ -726,6 +733,7 @@ function garage7(){
 	time.innerHTML = "07:00";
 	btn1.innerHTML = "kitchen";
 	btn3.innerHTML = "outside";
+	description.innerHTML = "Here you can take the car and go outside!";
 
 
 	btn1.onclick = function(){
@@ -753,10 +761,13 @@ function outside2(){
 
 function highway2(){
 	document.body.style.backgroundImage = "url('pic/highway2.jpg')";
+	time.innerHTML = "07:30";
 	btn1.innerHTML = "go left!";
 	btn3.style.display = "none";
 	btn2.innerHTML = "go right!";
 	btn2.style.display = "inline";
+	description.innerHTML = "Your office is at south wisconsin!";
+	title.innerHTML = "highway!";
 	
 
 	btn1.onclick = function(){
@@ -769,10 +780,13 @@ function highway2(){
 
 function highway1(){
 	document.body.style.backgroundImage = "url('pic/highway1.jpg')";
+	time.innerHTML = "07:35";
 	btn1.innerHTML = "go left!";
 	btn3.style.display = "none";
 	btn2.innerHTML = "go right!";
 	btn2.style.display = "inline";
+	description.innerHTML = "Your office is at south wisconsin!";
+	title.innerHTML = "highway!";
 
 
 	btn1.onclick = function(){
@@ -785,10 +799,13 @@ function highway1(){
 
 function highway(){
 	document.body.style.backgroundImage = "url('pic/highway.jpg')";
+	time.innerHTML = "07:40";
 	btn1.innerHTML = "go left!";
 	btn3.style.display = "none";
 	btn2.innerHTML = "go right!";
 	btn2.style.display = "inline";
+	description.innerHTML = "Your office is at south wisconsin!";
+	title.innerHTML = "highway!";
 
 
 	btn1.onclick = function(){
@@ -801,9 +818,12 @@ function highway(){
 
 function crash(){
 	document.body.style.backgroundImage = "url('pic/crash.jpg')";
+	title.innerHTML = "Game over!";
 	btn1.innerHTML = "start again";
 	btn2.style.display = "none";
 	btn3.style.display = "none";
+	description.innerHTML = "You crashed becuase of your bad vision!";
+	time.style.display = "none";
 
 
 	btn1.onclick = function(){
@@ -813,9 +833,12 @@ function crash(){
 
 function late(){
 	document.body.style.backgroundImage = "url('pic/wrong.jpg')";
+	title.innerHTML = "GO BACK!";
 	btn1.innerHTML = "go back!";
 	btn2.style.display = "none";
 	btn3.style.display = "none";
+	description.innerHTML = "Wrong way!";
+	time.style.display = "none";
 
 
 	btn1.onclick = function(){
@@ -825,23 +848,30 @@ function late(){
 
 function late2(){
 	document.body.style.backgroundImage = "url('pic/highway.jpg')";
+	time.innerHTML = "07:50";
+	time.style.display = "inline";
 	btn1.innerHTML = "go left!";
 	btn3.style.display = "none";
 	btn2.innerHTML = "go right!";
 	btn2.style.display = "none";
+	description.innerHTML = "Your office is at south wisconsin!";
+	title.innerHTML = "highway";
 
 
 	btn1.onclick = function(){
-		lose()
+		office1()
 	}
 }
 
 function office(){
 	document.body.style.backgroundImage = "url('pic/office.jpg')";
+	time.innerHTML = "08:00";
 	btn1.innerHTML = "go left!";
 	btn3.style.display = "none";
 	btn2.innerHTML = "go right!";
 	btn2.style.display = "inline";
+	description.innerHTML = "Your office is above StarBucks Coffee shop!";
+	title.innerHTML = "street!";
 
 
 	btn1.onclick = function(){
@@ -852,16 +882,22 @@ function office(){
 	}
 }
 
-function lose(){
-	document.body.style.backgroundImage = "url('pic/lose.jpg')";
-	btn1.innerHTML = "start again!";
+function office1(){
+	document.body.style.backgroundImage = "url('pic/office.jpg')";
+	time.innerHTML = "08:10";
+	btn1.innerHTML = "go left!";
 	btn3.style.display = "none";
 	btn2.innerHTML = "go right!";
-	btn2.style.display = "none";
+	btn2.style.display = "inline";
+	description.innerHTML = "Your office is above StarBucks Coffee shop!";
+	title.innerHTML = "street!";
 
 
 	btn1.onclick = function(){
-		restart()
+		lose()
+	}
+	btn2.onclick = function(){
+		wrong1()
 	}
 }
 
@@ -871,19 +907,26 @@ function wrong1(){
 	btn3.style.display = "none";
 	btn2.innerHTML = "go right!";
 	btn2.style.display = "none";
+	description.innerHTML = "Wrong building!";
+	time.style.display = "none";
+	title.innerHTML = "Go back!";
 
 
 	btn1.onclick = function(){
-		lose()
+		late3()
 	}
 }
 
 function late3(){
 	document.body.style.backgroundImage = "url('pic/office.jpg')";
+	time.innerHTML = "08:20";
+	time.style.display = "inline";
 	btn1.innerHTML = "go left!";
 	btn3.style.display = "none";
 	btn2.innerHTML = "go right!";
 	btn2.style.display = "none";
+	description.innerHTML = "Your office is above StarBucks Coffee shop!";
+	title.innerHTML = "street!";
 
 
 	btn1.onclick = function(){
@@ -891,12 +934,29 @@ function late3(){
 	}
 }
 
-function win(){
-	document.body.style.backgroundImage = "url('pic/win.jpg')";
+function lose(){
+	document.body.style.backgroundImage = "url('pic/lose.jpg')";
 	btn1.innerHTML = "start again!";
 	btn3.style.display = "none";
 	btn2.innerHTML = "go right!";
 	btn2.style.display = "none";
+	time.style.display = "none";
+
+
+	btn1.onclick = function(){
+		restart()
+	}
+}
+
+function win(){
+	document.body.style.backgroundImage = "url('pic/win.png')";
+	time.style.display = "none";
+	btn1.innerHTML = "start again!";
+	btn3.style.display = "none";
+	btn2.innerHTML = "go right!";
+	btn2.style.display = "none";
+	title.innerHTML = "congratulations! You made it!";
+	description.style.display = "none";
 
 
 	btn1.onclick = function(){

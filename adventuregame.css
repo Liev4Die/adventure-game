@@ -17,7 +17,8 @@ body{
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	font-size: 50px;
+	font-size: 60px;
+	color: red;
 }
 
 #button1:hover{
